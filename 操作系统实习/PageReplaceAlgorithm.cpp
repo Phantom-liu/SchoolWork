@@ -321,21 +321,21 @@ void PageReplaceAlgorithm::intergratedCondition() {
 		else if (factor > INTERGRATED_RATE && factor < 0.90) {
 			requestSequence.push_back(requestSequence.back());
 		}
-		else if (factor < 0.90) {
+		else if (factor < 0.95) {
 			int vsize = requestSequence.size();
 			requestSequence.push_back(requestSequence[vsize - 1 - rand() % (vsize / 3 + 1)]);
 		}
-		else if (factor > 0.90 && factor < 0.95) {
+		else if (factor > 0.95 && factor < 0.96) {
 			requestSequence.push_back(5);
 		}
-		else if (factor > 0.95 && factor < 0.97) {
+		else if (factor > 0.96 && factor < 0.97) {
 			requestSequence.push_back(6);
 		}
-		else if (factor > 0.97 && factor < 0.99) {
-			requestSequence.push_back(8);
+		else if (factor > 0.97 && factor < 0.98) {
+			requestSequence.push_back(7);
 		}
-		else if (factor > 0.99) {
-			requestSequence.push_back(9);
+		else if (factor > 0.98) {
+			requestSequence.push_back(8);
 		}
 		else {
 			requestSequence.push_back(rand() % PAGENUM_RANGE);

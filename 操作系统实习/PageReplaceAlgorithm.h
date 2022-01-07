@@ -14,8 +14,8 @@ using namespace std;
 #define MAX_REQSIZE		10000
 //不要超过MAX_REQSIZE 否则需改写OPT算法中的inMemory
 #define PAGENUM_RANGE	10000	
-#define TIME_RANDOM_RATE  0.6	//小于0.9
-#define SPACE_RANDOM_RATE 0.7
+#define TIME_RANDOM_RATE  0.8	//小于0.9
+#define SPACE_RANDOM_RATE 0.8
 #define INTERGRATED_RATE  SPACE_RANDOM_RATE*TIME_RANDOM_RATE
 
 
