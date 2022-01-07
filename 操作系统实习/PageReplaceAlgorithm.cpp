@@ -171,8 +171,8 @@ ResultBox PageReplaceAlgorithm::LFU() {
 					page->next->pre = page->pre;
 					page->next = NULL;
 				}
-				tail->pre->next = page;
-				page->pre = tail->pre;
+				tail->next = page;
+				page->pre = tail;
 				tail = page;
 			}
 			continue;

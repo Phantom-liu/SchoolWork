@@ -8,7 +8,7 @@ int main() {
 	while (1) {
 		srand(time(NULL));
 		int memsize, reqsize;
-		cout << "输入内存大小(1-500)和序列长度(1-10000)" << endl;
+		cout << "输入内存大小(2-500)和序列长度(1-10000)" << endl;
 		cin >> memsize >> reqsize;
 		PageReplaceAlgorithm test(memsize, reqsize);
 		cout << "________________________________________" << endl;
